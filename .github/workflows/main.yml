@@ -35,22 +35,23 @@ const defaultMenu = {
 ╰━━━━━━━━━━━━━━━╯
 %readmore
 `.trimStart(),
-  header: "╭━━━⊱ 🗂️ *%category* 🗂️ ⊱━━━╮",
-  body: "  │💬 _%cmd_ %isPremium %islimit",
-  footer: "╰━━━━━━━━━━━━━━━━╯",
-  after: "\n%me",
+
+  header:" ╭━━━⊱ 🗂️ *%category* 🗂️ ⊱━━━╮",
+  body:"  │💬 _%cmd_ %isPremium %islimit",
+  footer:"╰━━━━━━━━━━━━━━━━╯",
+  after:"\n%me",
 };
 
 let handler = async (m, {
   conn,
-  usedPrefix: _p,
+  usedPrefix:_p,
   __dirname,
   args
 }) => {
   await conn.sendMessage(m.chat, {
-    react: {
-      text: "✅",
-      key: m.key,
+    react:{
+      text:"✅",
+      key:m.key,
     }
   });
 
