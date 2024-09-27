@@ -13,7 +13,6 @@ import os from "os";
 import fetch from "node-fetch";
 
 const defaultMenu = {
-  before: `
 🌟✨ *Welcome to ${Lil Neill Production}* ✨🌟
 ╭━━━⊱ 👤 *USER* 👤 ⊱━━━╮
 🖋️ *Name:* _%name_
